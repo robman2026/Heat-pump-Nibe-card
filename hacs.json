@@ -1,0 +1,7 @@
+{
+  "name": "Nibe SMO S40 Card",
+  "description": "Heat pump dashboard card for Nibe SMO S40 — temperatures, pressures, energy and run times. Visual style matches robman2026/Kids-Room-Dashboard-Card.",
+  "render_readme": true,
+  "content_in_root": true,
+  "filename": "nibe-smo-s40-card.js"
+}
