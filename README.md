@@ -4,7 +4,7 @@
 [![GitHub Release](https://img.shields.io/github/release/robman2026/nibe-smo-s40-card.svg)](https://github.com/robman2026/nibe-smo-s40-card/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A Home Assistant Lovelace custom card for the **Nibe SMO S40** heat pump. Displays temperatures, pressures, refrigerant circuit data, energy statistics and compressor run times — all in a dark, modern style consistent with the [Kids-Room-Dashboard-Card](https://github.com/robman2026/Kids-Room-Dashboard-Card).
+A Home Assistant Lovelace custom card for the **Nibe SMO S40** heat pump. Displays temperatures, pressures, refrigerant circuit data, energy statistics and compressor run times — all in a dark modern style.
 
 ---
 
