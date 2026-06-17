@@ -814,6 +814,15 @@ class NibeSmoS40Card extends _NibeLit {
         .energy-grid { grid-template-columns: repeat(2, 1fr); }
         .press-row   { flex-direction: column; }
       }
+
+      /* ── Just HA Dashboard design adoption ──────────────────────────────
+         Gated on --user-* tokens (defined only by the Just HA theme). Falls
+         back to the card's original look on every other dashboard/theme. */
+      .card {
+        background: var(--user-glow-amber, transparent), var(--user-ink-750, #0d1117) !important;
+        border: 1px solid var(--user-line, transparent) !important;
+        border-radius: var(--user-radius-lg, 18px) !important;
+      }
     `;
   }
 }
