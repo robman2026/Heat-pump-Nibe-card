@@ -158,6 +158,7 @@ class NibeSmoS40CardEditor extends _NibeLit {
         ${this._txt("Card Title", c.title, v => this._set("title", v), "Nibe SMO S40")}
         ${this._toggle("Show Date & Time", c.show_datetime, v => this._set("show_datetime", v))}
         ${this._toggle("Show Status Dot", c.show_status_dot, v => this._set("show_status_dot", v))}
+        ${this._toggle("✨ Just HA Design", c.jha, v => this._set("jha", v))}
       </div>
       <div class="section">
         <div class="sec-title">Connection & status</div>
@@ -594,7 +595,7 @@ class NibeSmoS40Card extends _NibeLit {
 
     return _NibeHtml`
       <ha-card>
-        <div class="card">
+        <div class="card${this._config.jha ? ' card-jha' : ''}">
 
           <!-- Header -->
           <div class="header">
@@ -818,9 +819,9 @@ class NibeSmoS40Card extends _NibeLit {
       /* ── Just HA Dashboard design adoption ──────────────────────────────
          Gated on --user-* tokens (defined only by the Just HA theme). Falls
          back to the card's original look on every other dashboard/theme. */
-      .card {
-        background: var(--user-glow-amber, transparent), var(--user-ink-750, #0d1117) !important;
-        border: 1px solid var(--user-line, transparent) !important;
+      .card-jha {
+        background: var(--user-glow-amber, radial-gradient(120% 130% at 50% -10%, rgba(224,162,78,.30) 0%, rgba(160,104,43,.10) 38%, rgba(20,20,23,0) 72%)), var(--user-ink-750, #0d1117) !important;
+        border: 1px solid var(--user-line, rgba(255,255,255,.09)) !important;
         border-radius: var(--user-radius-lg, 18px) !important;
       }
     `;
